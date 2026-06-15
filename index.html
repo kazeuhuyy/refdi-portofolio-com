@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Refdi — Digital Admin & E-commerce Specialist</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Rethink Sans', 'sans-serif'] },
+          colors: {
+            primary: '#6145FF',
+            'primary-hover': '#5035e4',
+            dark: '#0A0618',
+            'dark-text': '#0D0C54',
+            'body-text': '#40406A',
+            'light-text': '#B8B1D8',
+            'light-bg': '#F8F6FF',
+            'card-border': '#EBE7FF',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { scroll-behavior: smooth; box-sizing: border-box; }
+    body { font-family: 'Rethink Sans', sans-serif; margin: 0; }
+    .text-gradient { background-image: linear-gradient(45deg, #6145FF, #BA9DFF); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .glass { background: rgba(154,145,255,0.1); backdrop-filter: blur(12px); border: 1px solid rgba(201,196,255,0.2); }
+    .profile-ring { background: conic-gradient(from 0deg, #6145FF, #BA9DFF, #6145FF); padding: 5px; border-radius: 9999px; }
+    .service-card { transition: all 300ms ease; }
+    .service-card:hover { transform: translateY(-6px); box-shadow: 0 25px 50px -12px rgba(97,69,255,0.12); }
+    .nav-link { transition: color 150ms ease; }
+    .nav-link:hover { color: #6145FF; }
+    .link-card { transition: all 300ms ease; }
+    .link-card:hover { transform: translateY(-3px); box-shadow: 0 20px 40px -12px rgba(97,69,255,0.2); border-color: #6145FF; }
+    @keyframes fadeInUp { from { opacity:0; transform:translateY(30px); } to { opacity:1; transform:translateY(0); } }
+    .fade-in { animation: fadeInUp 0.7s ease-out forwards; }
+    .fade-in-d1 { animation-delay: 0.15s; opacity:0; }
+    .fade-in-d2 { animation-delay: 0.3s; opacity:0; }
+    .fade-in-d3 { animation-delay: 0.45s; opacity:0; }
+    .fade-in-d4 { animation-delay: 0.6s; opacity:0; }
+    @keyframes pulse-ring { 0%,100%{ box-shadow: 0 0 0 0 rgba(97,69,255,0.35); } 50%{ box-shadow: 0 0 0 14px rgba(97,69,255,0); } }
+    .pulse-ring { animation: pulse-ring 2.5s ease-in-out infinite; }
+    html { scroll-padding-top: 80px; }
+    .contact-link { display:flex; align-items:center; gap:1rem; text-decoration:none; }
+    .contact-link:hover .contact-icon { background: rgba(97,69,255,0.2); }
+    .contact-link:hover .contact-value { color: #6145FF; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .loading-spin { animation: spin 1s linear infinite; }
+  </style>
+</head>
+<body class="bg-white text-body-text">
+
+  <!-- NAVBAR -->
+  <nav style="position:absolute; top:0; left:0; right:0; padding-top:1.5rem; z-index:50;">
+    <div class="max-w-[1066px] mx-auto px-6">
+      <div class="glass rounded-full px-6 py-3 flex items-center justify-between">
+        <a href="#" class="flex items-center gap-2">
+          <div class="w-9 h-9 bg-primary rounded-lg flex items-center justify-center"><span class="text-white font-bold text-sm">MR</span></div>
+          <span class="text-dark-text font-semibold text-lg hidden sm:inline">Refdi</span>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#profil" class="nav-link text-sm font-medium text-dark-text">Profil</a>
+          <a href="#layanan" class="nav-link text-sm font-medium text-dark-text">Layanan</a>
+          <a href="#kontak" class="nav-link text-sm font-medium text-dark-text">Kontak</a>
+        </div>
+        <a href="https://wa.me/601129926424" target="_blank" rel="noopener noreferrer" class="bg-primary hover:bg-primary-hover text-white text-sm font-semibold py-2.5 px-6 rounded-full transition-colors">Hubungi Saya</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="profil" style="position:relative; overflow:hidden;">
+    <div style="position:absolute; inset:0; background:#0A0618;"></div>
+    <div style="position:absolute; inset:0; opacity:0.3; pointer-events:none;">
+      <div style="position:absolute; top:0; left:25%; width:500px; height:500px; background:rgba(97,69,255,0.2); border-radius:50%; filter:blur(120px);"></div>
+      <div style="position:absolute; bottom:0; right:25%; width:400px; height:400px; background:rgba(97,69,255,0.15); border-radius:50%; filter:blur(100px);"></div>
+    </div>
+    <div class="max-w-[1066px] mx-auto px-6 relative z-10 pt-40 pb-28">
+      <div class="flex flex-col items-center text-center">
+        <div class="fade-in mb-8">
+          <div class="profile-ring pulse-ring">
+            <div class="rounded-full overflow-hidden w-44 h-44 md:w-52 md:h-52" style="border:5px solid #0A0618;">
+              <img src="https://z-cdn-media.chatglm.cn/files/60e35450-f133-467b-b654-7ef5949f1e95.png?auth_key=1881519327-59ecc2a0de424e9387eec51dcf766add-0-91791cbf1f92cae6f04be2149e48ab4c" alt="Muhammad Refdi" class="w-full h-full object-cover object-top">
+            </div>
+          </div>
+        </div>
+        <div class="fade-in fade-in-d1 inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full py-2 px-5 mb-6">
+          <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+          <span class="text-xs font-semibold text-light-text uppercase tracking-wider">Siap Bekerja</span>
+        </div>
+        <h1 class="fade-in fade-in-d1 text-4xl md:text-5xl lg:text-6xl font-semibold text-white tracking-tight mb-4">Muhammad <span class="text-gradient">Refdi</span></h1>
+        <p class="fade-in fade-in-d2 text-xl md:text-2xl text-light-text font-medium mb-8">Digital Admin & <span class="text-white font-semibold">E-commerce Specialist</span></p>
+        <p class="fade-in fade-in-d3 text-lg text-light-text/80 leading-relaxed max-w-2xl mb-10">Saya adalah admin berpengalaman yang fokus membantu <strong class="text-white">UMKM</strong> merapikan toko online. Ahli dalam <strong class="text-white">input produk</strong> dan <strong class="text-white">deskripsi yang menjual</strong>.</p>
+        <div class="fade-in fade-in-d4 flex flex-wrap justify-center gap-4 mb-12">
+          <a href="https://wa.me/601129926424" target="_blank" rel="noopener noreferrer" class="bg-primary hover:bg-primary-hover text-white font-semibold py-4 px-10 rounded-full transition-colors inline-flex items-center gap-2" style="box-shadow:0 4px 8px rgba(97,69,255,0.3);">
+            <span class="iconify" data-icon="ph:whatsapp-logo-bold" data-width="20"></span> Chat WhatsApp
+          </a>
+          <a href="mailto:muhammadrefdy07@gmail.com" class="border border-white/20 text-white font-semibold py-4 px-10 rounded-full hover:bg-white/5 transition-colors inline-flex items-center gap-2">
+            <span class="iconify" data-icon="ph:envelope-bold" data-width="20"></span> Kirim Email
+          </a>
+        </div>
+        <div class="fade-in fade-in-d4 w-full max-w-lg">
+          <a href="https://drive.google.com" target="_blank" rel="noopener noreferrer" class="link-card flex items-center gap-4 bg-white/5 border border-white/10 rounded-2xl p-5" style="text-decoration:none;">
+            <div class="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center flex-shrink-0"><span class="iconify text-primary" data-icon="ph:folder-open-bold" data-width="24"></span></div>
+            <div class="text-left flex-1"><div class="text-white font-semibold text-sm">Link Portfolio Saya</div><div class="text-light-text text-xs">Google Drive / Sheets — Klik untuk melihat</div></div>
+            <span class="iconify text-light-text" data-icon="ph:arrow-right-bold" data-width="20"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div style="position:absolute; bottom:0; left:0; right:0; pointer-events:none;">
+      <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block; width:100%;"><path d="M0 80L1440 80L1440 30C1440 30 1080 0 720 0C360 0 0 30 0 30L0 80Z" fill="white"/></svg>
+    </div>
+  </section>
+
+  <!-- LAYANAN -->
+  <section id="layanan" class="py-24 bg-white">
+    <div class="max-w-[72rem] mx-auto px-6">
+      <div class="text-center mb-16">
+        <span class="inline-block bg-light-bg border border-card-border rounded-full py-1.5 px-4 text-xs font-semibold text-primary uppercase tracking-wider mb-4">Layanan</span>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-dark-text tracking-tight mb-4">Apa yang Saya <span class="text-gradient">Bisa Bantu</span></h2>
+        <p class="text-lg text-body-text max-w-2xl mx-auto">Layanan untuk membantu UMKM memulai toko online dengan benar</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10">
+        <div class="service-card bg-light-bg border border-card-border rounded-3xl p-8"><div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-5"><span class="iconify text-primary" data-icon="ph:package-bold" data-width="24"></span></div><h3 class="text-xl font-semibold text-dark-text mb-3">Input & Upload Produk</h3><p class="text-body-text leading-relaxed">Bantu input produk ke marketplace dengan data lengkap — foto, varian, harga, dan kategori yang rapi.</p></div>
+        <div class="service-card bg-light-bg border border-card-border rounded-3xl p-8"><div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-5"><span class="iconify text-primary" data-icon="ph:pencil-simple-line-bold" data-width="24"></span></div><h3 class="text-xl font-semibold text-dark-text mb-3">Deskripsi yang Menjual</h3><p class="text-body-text leading-relaxed">Tulis deskripsi produk yang menarik & mudah ditemukan di pencarian marketplace.</p></div>
+        <div class="service-card bg-light-bg border border-card-border rounded-3xl p-8"><div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-5"><span class="iconify text-primary" data-icon="ph:storefront-bold" data-width="24"></span></div><h3 class="text-xl font-semibold text-dark-text mb-3">Merapikan Toko Online</h3><p class="text-body-text leading-relaxed">Atur ulang etalase, kategori, dan tampilan toko agar lebih rapi dan profesional.</p></div>
+        <div class="service-card bg-light-bg border border-card-border rounded-3xl p-8"><div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-5"><span class="iconify text-primary" data-icon="ph:images-bold" data-width="24"></span></div><h3 class="text-xl font-semibold text-dark-text mb-3">Konten Visual Sederhana</h3><p class="text-body-text leading-relaxed">Buat konten feed dan banner promosi sederhana menggunakan Canva untuk toko online Anda.</p></div>
+        <div class="service-card bg-light-bg border border-card-border rounded-3xl p-8"><div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-5"><span class="iconify text-primary" data-icon="ph:chart-bar-bold" data-width="24"></span></div><h3 class="text-xl font-semibold text-dark-text mb-3">Pencatatan Penjualan</h3><p class="text-body-text leading-relaxed">Catat penjualan harian dan buat laporan sederhana menggunakan Excel/Google Sheets.</p></div>
+        <div class="service-card bg-light-bg border border-card-border rounded-3xl p-8"><div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-5"><span class="iconify text-primary" data-icon="ph:megaphone-bold" data-width="24"></span></div><h3 class="text-xl font-semibold text-dark-text mb-3">Bantu Ikut Campaign</h3><p class="text-body-text leading-relaxed">Bantu daftarkan produk ke program campaign marketplace seperti Flash Sale, Free Ongkir, dan COD.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section id="kontak" style="position:relative; overflow:hidden; background:#0A0618;">
+    <div style="position:absolute; inset:0; opacity:0.2; pointer-events:none;">
+      <div style="position:absolute; top:2.5rem; right:5rem; width:20rem; height:20rem; background:rgba(97,69,255,0.3); border-radius:50%; filter:blur(100px);"></div>
+      <div style="position:absolute; bottom:2.5rem; left:5rem; width:15rem; height:15rem; background:rgba(97,69,255,0.2); border-radius:50%; filter:blur(80px);"></div>
+    </div>
+    <div class="max-w-[1066px] mx-auto px-6 relative z-10 py-24">
+      <div class="grid md:grid-cols-2 gap-16 items-start">
+        <div>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-white tracking-tight mb-6">Mari <span class="text-gradient">Berkolaborasi</span></h2>
+          <p class="text-lg text-light-text leading-relaxed mb-10">Butuh bantuan merapikan toko online atau input produk? Saya siap membantu Anda memulai dengan benar.</p>
+          <div class="space-y-5">
+            <a href="https://wa.me/601129926424" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <div class="contact-icon w-12 h-12 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center transition-colors" style="pointer-events:none;"><span class="iconify text-primary" data-icon="ph:whatsapp-logo-bold" data-width="22" style="pointer-events:none;"></span></div>
+              <div style="pointer-events:none;"><div class="text-sm text-light-text">WhatsApp</div><div class="contact-value text-white font-medium transition-colors">+60 11-2992-6424</div></div>
+            </a>
+            <a href="mailto:muhammadrefdy07@gmail.com" class="contact-link">
+              <div class="contact-icon w-12 h-12 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center transition-colors" style="pointer-events:none;"><span class="iconify text-primary" data-icon="ph:envelope-bold" data-width="22" style="pointer-events:none;"></span></div>
+              <div style="pointer-events:none;"><div class="text-sm text-light-text">Email</div><div class="contact-value text-white font-medium transition-colors">muhammadrefdy07@gmail.com</div></div>
+            </a>
+            <a href="https://instagram.com/rfdymhmmd" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <div class="contact-icon w-12 h-12 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center transition-colors" style="pointer-events:none;"><span class="iconify text-primary" data-icon="ph:instagram-logo-bold" data-width="22" style="pointer-events:none;"></span></div>
+              <div style="pointer-events:none;"><div class="text-sm text-light-text">Instagram</div><div class="contact-value text-white font-medium transition-colors">@rfdymhmmd</div></div>
+            </a>
+            <a href="https://drive.google.com" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <div class="contact-icon w-12 h-12 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center transition-colors" style="pointer-events:none;"><span class="iconify text-primary" data-icon="ph:folder-open-bold" data-width="22" style="pointer-events:none;"></span></div>
+              <div style="pointer-events:none;"><div class="text-sm text-light-text">Portfolio</div><div class="contact-value text-white font-medium transition-colors">Google Drive / Sheets</div></div>
+            </a>
+          </div>
+        </div>
+
+        <!-- FORM -->
+        <div class="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-sm">
+          <h3 class="text-xl font-semibold text-white mb-2">Kirim Pesan</h3>
+          <p class="text-sm text-light-text mb-6">Pilih cara pengiriman: via Email atau WhatsApp</p>
+          <form id="contactForm" class="space-y-5">
+            <input type="hidden" name="access_key" id="accessKeyInput" value="">
+            <input type="checkbox" name="botcheck" style="display:none;">
+            <div>
+              <label for="inputNama" class="text-sm font-medium text-white mb-1.5 block">Nama</label>
+              <input type="text" id="inputNama" name="nama" placeholder="Nama lengkap Anda" required class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-3.5 text-white placeholder-light-text/50 focus:outline-none focus:border-primary/50 transition-colors">
+            </div>
+            <div>
+              <label for="inputKontak" class="text-sm font-medium text-white mb-1.5 block">Email / WhatsApp Anda</label>
+              <input type="text" id="inputKontak" name="kontak" placeholder="email@contoh.com / 08xxx" required class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-3.5 text-white placeholder-light-text/50 focus:outline-none focus:border-primary/50 transition-colors">
+            </div>
+            <div>
+              <label for="inputLayanan" class="text-sm font-medium text-white mb-1.5 block">Kebutuhan</label>
+              <select id="inputLayanan" name="layanan" class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-3.5 text-light-text/50 focus:outline-none focus:border-primary/50 transition-colors appearance-none">
+                <option value="">Pilih layanan</option>
+                <option value="Input & Upload Produk">Input & Upload Produk</option>
+                <option value="Deskripsi yang Menjual">Deskripsi yang Menjual</option>
+                <option value="Merapikan Toko Online">Merapikan Toko Online</option>
+                <option value="Konten Visual Sederhana">Konten Visual Sederhana</option>
+                <option value="Pencatatan Penjualan">Pencatatan Penjualan</option>
+                <option value="Bantu Ikut Campaign">Bantu Ikut Campaign</option>
+              </select>
+            </div>
+            <div>
+              <label for="inputPesan" class="text-sm font-medium text-white mb-1.5 block">Pesan</label>
+              <textarea id="inputPesan" name="pesan" rows="4" placeholder="Ceritakan kebutuhan toko online Anda..." required class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-3.5 text-white placeholder-light-text/50 focus:outline-none focus:border-primary/50 transition-colors resize-none"></textarea>
+            </div>
+            <div class="space-y-3 pt-2">
+              <button type="button" id="btnWhatsApp" class="w-full text-white font-semibold py-4 px-10 rounded-full transition-colors duration-150 inline-flex items-center justify-center gap-2 cursor-pointer" style="background:#25D366; box-shadow:0 4px 8px rgba(37,211,102,0.3);">
+                <span class="iconify" data-icon="ph:whatsapp-logo-bold" data-width="20"></span> Kirim via WhatsApp
+              </button>
+              <button type="button" id="btnEmail" class="w-full text-white font-semibold py-4 px-10 rounded-full transition-colors duration-150 inline-flex items-center justify-center gap-2 cursor-pointer" style="background:#6145FF; box-shadow:0 4px 8px rgba(97,69,255,0.3);">
+                <span class="iconify" data-icon="ph:envelope-bold" data-width="20"></span> Kirim via Email
+              </button>
+            </div>
+            <div id="formMessage" class="hidden text-center text-sm font-medium py-3 rounded-2xl"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background:#0A0618; padding-top:4rem; padding-bottom:2rem; border-top:1px solid rgba(255,255,255,0.05);">
+    <div class="max-w-[1066px] mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 mb-8">
+        <div class="flex items-center gap-3"><div class="w-9 h-9 bg-primary rounded-lg flex items-center justify-center"><span class="text-white font-bold text-sm">MR</span></div><span class="text-white font-semibold text-lg">Muhammad Refdi</span></div>
+        <div class="flex items-center gap-2 text-light-text text-sm"><span>Digital Admin</span><span style="color:rgba(255,255,255,0.2);">•</span><span>E-commerce Specialist</span></div>
+        <div class="flex gap-3">
+          <a href="https://instagram.com/rfdymhmmd" target="_blank" rel="noopener noreferrer" class="w-9 h-9 bg-white/5 hover:bg-primary/20 border border-white/10 rounded-xl flex items-center justify-center transition-colors"><span class="iconify text-light-text" data-icon="ph:instagram-logo-bold" data-width="18"></span></a>
+          <a href="https://wa.me/601129926424" target="_blank" rel="noopener noreferrer" class="w-9 h-9 bg-white/5 hover:bg-primary/20 border border-white/10 rounded-xl flex items-center justify-center transition-colors"><span class="iconify text-light-text" data-icon="ph:whatsapp-logo-bold" data-width="18"></span></a>
+          <a href="mailto:muhammadrefdy07@gmail.com" class="w-9 h-9 bg-white/5 hover:bg-primary/20 border border-white/10 rounded-xl flex items-center justify-center transition-colors"><span class="iconify text-light-text" data-icon="ph:envelope-bold" data-width="18"></span></a>
+        </div>
+      </div>
+      <div style="border-top:1px solid rgba(255,255,255,0.05); padding-top:1.5rem;" class="flex flex-col md:flex-row justify-between items-center gap-3">
+        <p style="color:rgba(184,177,216,0.6); font-size:0.875rem;">&copy; 2025 Muhammad Refdi. All rights reserved.</p>
+        <p style="color:rgba(184,177,216,0.4); font-size:0.75rem;">Dibuat dengan <span style="color:#6145FF;">❤</span> untuk UMKM Indonesia</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ==========================================
+    // PENTING: GANTI ACCESS KEY DI BAWAH INI
+    // Baca panduan di bawah kode HTML
+    // ==========================================
+    var WEB3FORMS_KEY = 'GANTI_DENGAN_KEY_ANDA';
+
+    function getFormData() {
+      var nama = document.getElementById('inputNama').value.trim();
+      var kontak = document.getElementById('inputKontak').value.trim();
+      var layanan = document.getElementById('inputLayanan').value;
+      var pesan = document.getElementById('inputPesan').value.trim();
+      if (!nama || !kontak || !pesan) return null;
+      return { nama: nama, kontak: kontak, layanan: layanan, pesan: pesan };
+    }
+
+    function showMsg(text, color) {
+      var msg = document.getElementById('formMessage');
+      msg.classList.remove('hidden');
+      msg.textContent = text;
+      msg.style.background = color === 'green' ? 'rgba(34,197,94,0.15)' : 'rgba(239,68,68,0.15)';
+      msg.style.color = color === 'green' ? '#4ade80' : '#f87171';
+      setTimeout(function() { msg.classList.add('hidden'); }, 8000);
+    }
+
+    // WHATSAPP
+    document.getElementById('btnWhatsApp').addEventListener('click', function() {
+      var data = getFormData();
+      if (!data) { showMsg('Mohon isi Nama, Kontak, dan Pesan terlebih dahulu.', 'red'); return; }
+      var text = 'Halo Muhammad Refdi! 👋\n\n*Nama:* ' + data.nama + '\n*Kontak:* ' + data.kontak + '\n';
+      if (data.layanan) text += '*Layanan:* ' + data.layanan + '\n';
+      text += '*Pesan:*\n' + data.pesan + '\n\nDikirim dari portfolio website.';
+      window.open('https://wa.me/601129926424?text=' + encodeURIComponent(text), '_blank');
+      showMsg('✓ Membuka WhatsApp... Pesan sudah otomatis terisi!', 'green');
+      document.getElementById('contactForm').reset();
+    });
+
+    // EMAIL via Web3Forms
+    document.getElementById('btnEmail').addEventListener('click', function() {
+      var data = getFormData();
+      if (!data) { showMsg('Mohon isi Nama, Kontak, dan Pesan terlebih dahulu.', 'red'); return; }
+
+      // Cek apakah access key sudah diganti
+      if (WEB3FORMS_KEY === 'GANTI_DENGAN_KEY_ANDA') {
+        showMsg('⚠️ Email belum aktif. Hubungi pemilik website untuk setup Web3Forms.', 'red');
+        return;
+      }
+
+      var btn = document.getElementById('btnEmail');
+      var originalHTML = btn.innerHTML;
+      btn.disabled = true;
+      btn.innerHTML = '<svg class="loading-spin" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><circle cx="12" cy="12" r="10" stroke-opacity="0.3"/><path d="M12 2a10 10 0 0 1 10 10"/></svg> Mengirim...';
+
+      var formData = new FormData();
+      formData.append('access_key', WEB3FORMS_KEY);
+      formData.append('subject', 'Pesan Portfolio — ' + data.nama + (data.layanan ? ' (' + data.layanan + ')' : ''));
+      formData.append('Nama', data.nama);
+      formData.append('Kontak', data.kontak);
+      formData.append('Layanan', data.layanan || '-');
+      formData.append('Pesan', data.pesan);
+
+      fetch('https://api.web3forms.com/submit', { method: 'POST', body: formData })
+      .then(function(r) { return r.json(); })
+      .then(function(result) {
+        btn.disabled = false;
+        btn.innerHTML = originalHTML;
+        if (result.success) {
+          showMsg('✓ Email berhasil terkirim! Terima kasih.', 'green');
+          document.getElementById('contactForm').reset();
+        } else {
+          showMsg('Gagal mengirim. Coba pakai WhatsApp saja.', 'red');
+        }
+      })
+      .catch(function() {
+        btn.disabled = false;
+        btn.innerHTML = originalHTML;
+        showMsg('Gagal mengirim. Coba pakai WhatsApp saja.', 'red');
+      });
+    });
+
+    // Scroll animation
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) { if (entry.isIntersecting) { entry.target.style.opacity = '1'; entry.target.style.transform = 'translateY(0)'; } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.service-card').forEach(function(el) { el.style.opacity = '0'; el.style.transform = 'translateY(20px)'; el.style.transition = 'opacity 0.6s ease, transform 0.6s ease'; observer.observe(el); });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+      a.addEventListener('click', function(e) { var href = this.getAttribute('href'); if (href && href.length > 1) { var t = document.querySelector(href); if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth' }); } } });
+    });
+  </script>
+</body>
+</html>
